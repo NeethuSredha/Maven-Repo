@@ -4,7 +4,7 @@ public class Example3 {
 
 	public static void checkAge(int age) throws ArithmeticException {
 		if (age < 18) {
-			throw new ArithmeticException("Not eligible");
+			throw new ArithmeticException("Not1 eligible");
 		} else {
 			System.out.println("Eligible");
 		}
@@ -14,6 +14,7 @@ public class Example3 {
 		try {
 			checkAge(16);
 		} catch (ArithmeticException e) {
+			System.out.println(e.getMessage());
 			System.out.println("Invalid Age");
 		}
 	}
